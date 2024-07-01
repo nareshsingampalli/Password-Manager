@@ -210,19 +210,19 @@ class App extends Component {
                     ) : (
                       <p className="website">{eachValue.password}</p>
                     )}
-                    <button
-                      type="button"
-                      className="del-button"
-                      onClick={() => this.deleteItem(eachValue.id)}
-                      data-testid="delete"
-                    >
-                      <img
-                        src="https://assets.ccbp.in/frontend/react-js/password-manager-delete-img.png"
-                        alt="delete"
-                        className="del-image"
-                      />
-                    </button>
                   </div>
+                  <button
+                    type="button"
+                    className="del-button"
+                    onClick={() => this.deleteItem(eachValue.id)}
+                    data-testid="delete"
+                  >
+                    <img
+                      src="https://assets.ccbp.in/frontend/react-js/password-manager-delete-img.png"
+                      alt="delete"
+                      className="del-image"
+                    />
+                  </button>
                 </li>
               ))}
             </ul>
